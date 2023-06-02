@@ -10,17 +10,17 @@ const sources = {
         "https://www.proxy-list.download/api/v1/get?type=http",
         "https://www.proxyscan.io/download?type=http",
         "https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc&protocols=https",
-        "https://raw.githubusercontent.com/aslisk/proxyhttps/main/https.txt",
-        "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
-        "https://raw.githubusercontent.com/hanwayTech/free-proxy-list/main/https.txt",
-        "https://raw.githubusercontent.com/hendrikbgr/Free-Proxy-Repo/master/proxy_list.txt",
-        "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt",
-        "https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt",
-        "https://raw.githubusercontent.com/mmpx12/proxy-list/master/https.txt",
-        "https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",
-        "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/http.txt",
-        "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/https.txt",
-        "https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt"
+        "https://cdn.jsdelivr.net/gh/aslisk/proxyhttps/https.txt",
+        "https://cdn.jsdelivr.net/gh/clarketm/proxy-list/proxy-list-raw.txt",
+        // "https://cdn.jsdelivr.net/gh/hanwayTech/free-proxy-list/https.txt",
+        "https://cdn.jsdelivr.net/gh/hendrikbgr/Free-Proxy-Repo/proxy_list.txt",
+        "https://cdn.jsdelivr.net/gh/jetkai/proxy-list/online-proxies/txt/proxies-http.txt",
+        "https://cdn.jsdelivr.net/gh/mertguvencli/http-proxy-list/proxy-list/data.txt",
+        "https://cdn.jsdelivr.net/gh/mmpx12/proxy-list/https.txt",
+        "https://cdn.jsdelivr.net/gh/roosterkid/openproxylist/HTTPS_RAW.txt",
+        "https://cdn.jsdelivr.net/gh/saschazesiger/Free-Proxies/proxies/http.txt",
+        "https://cdn.jsdelivr.net/gh/ShiftyTR/Proxy-List/https.txt",
+        "https://cdn.jsdelivr.net/gh/sunny9577/proxy-scraper/proxies.txt"
     ],
     socks4: [
         'http://proxysearcher.sourceforge.net/Proxy%20List.php?type=socks', 
@@ -30,12 +30,12 @@ const sources = {
         'https://proxyhub.me/en/all-socks4-proxy-list.html', 
         'https://proxylist.geonode.com/api/proxy-list?limit…rt_by=lastChecked&sort_type=desc&protocols=socks4', 
         'https://www.my-proxy.com/free-socks-4-proxy.html', 
-        'https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS4.txt', 
-        'https://raw.githubusercontent.com/hanwayTech/free-proxy-list/main/socks4.txt', 
-        'https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt', 
-        'https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt', 
-        'https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt', 
-        'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt'
+        'https://cdn.jsdelivr.net/gh/B4RC0DE-TM/proxy-list/SOCKS4.txt', 
+        // 'https://cdn.jsdelivr.net/gh/hanwayTech/free-proxy-list/socks4.txt', 
+        'https://cdn.jsdelivr.net/gh/jetkai/proxy-list/online-proxies/txt/proxies-socks4.txt', 
+        'https://cdn.jsdelivr.net/gh/roosterkid/openproxylist/SOCKS4_RAW.txt', 
+        'https://cdn.jsdelivr.net/gh/saschazesiger/Free-Proxies/proxies/socks4.txt', 
+        'https://cdn.jsdelivr.net/gh/TheSpeedX/PROXY-List/socks4.txt'
     ],
     socks5: [
         'http://proxysearcher.sourceforge.net/Proxy%20List.php?type=socks', 
@@ -45,13 +45,13 @@ const sources = {
         'https://proxy-tools.com/proxy/socks5', 
         'https://proxyhub.me/en/all-sock5-proxy-list.html', 
         'https://proxylist.geonode.com/api/proxy-list?limit…rt_by=lastChecked&sort_type=desc&protocols=socks5', 
-        'https://raw.githubusercontent.com/hanwayTech/free-proxy-list/main/socks5.txt', 
-        'https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks5.txt', 
-        'https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt', 
-        'https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt', 
-        'https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt', 
-        'https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt', 
-        'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt'
+        // 'https://cdn.jsdelivr.net/gh/hanwayTech/free-proxy-list/socks5.txt', 
+        'https://cdn.jsdelivr.net/gh/HyperBeats/proxy-list/socks5.txt', 
+        'https://cdn.jsdelivr.net/gh/jetkai/proxy-list/online-proxies/txt/proxies-socks5.txt', 
+        'https://cdn.jsdelivr.net/gh/mmpx12/proxy-list/socks5.txt', 
+        'https://cdn.jsdelivr.net/gh/roosterkid/openproxylist/SOCKS5_RAW.txt', 
+        'https://cdn.jsdelivr.net/gh/saschazesiger/Free-Proxies/proxies/socks5.txt', 
+        'https://cdn.jsdelivr.net/gh/TheSpeedX/PROXY-List/socks5.txt'
     ]
 }
 
@@ -78,9 +78,15 @@ tapButtons.forEach((button) => {
 });
 
 
-const request = async (url) => {
+const request = async (url, i = 0) => {
+
+    const proxy = [
+        '', // try without proxy first
+        'https://corsproxy.io/?',
+    ];
+
     try{
-        const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`);
+        const response = await fetch(proxy[i] + url);
         const data = await response.text();
         const cleanData = data.match(proxyMatch).map(item => item.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}/)[0].trim());
         results.push(...cleanData);
@@ -88,7 +94,11 @@ const request = async (url) => {
         counter.textContent = results.length;
     }
     catch(e){
-        console.log(e);
+        if (i === proxy.length - 1) {
+            return
+        } else {
+            return request(url, i + 1)
+        }
     }   
 };
 
@@ -104,7 +114,6 @@ downloadButton.addEventListener("click", async () => {
     console.log(proxyType);
 
     await Promise.all(sources[proxyType].map(async (url) => {
-        console.log(url);
         await request(url);
     }));
 
@@ -125,6 +134,3 @@ function downloadTextFile() {
     link.click();
     URL.revokeObjectURL(url);
 };
-
-
-
