@@ -1,10 +1,10 @@
 {
-  "name": "testa",
-  "version": "1.0.0",
+  "name": "proxycrawl",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --watch --minify"
   },
   "keywords": [],
   "author": "",
